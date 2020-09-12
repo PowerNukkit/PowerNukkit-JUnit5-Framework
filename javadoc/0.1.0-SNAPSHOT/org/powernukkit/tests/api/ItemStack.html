@@ -4,7 +4,7 @@
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics --> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172727144-3"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "UA-172727144-3"); </script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>MockServer (PowerNukkit JUnit 5 Testing Framework 0.1.0-SNAPSHOT API)</title>
+<title>ItemStack (PowerNukkit JUnit 5 Testing Framework 0.1.0-SNAPSHOT API)</title>
 <meta name="date" content="2020-09-12">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
@@ -13,7 +13,7 @@
 <script type="text/javascript"><!--
     try {
         if (location.href.indexOf('is-external=true') == -1) {
-            parent.document.title="MockServer (PowerNukkit JUnit 5 Testing Framework 0.1.0-SNAPSHOT API)";
+            parent.document.title="ItemStack (PowerNukkit JUnit 5 Testing Framework 0.1.0-SNAPSHOT API)";
         }
     }
     catch(err) {
@@ -35,7 +35,7 @@
 <li><a href="../../../../overview-summary.html">Overview</a></li>
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
-<li><a href="class-use/MockServer.html">Use</a></li>
+<li><a href="class-use/ItemStack.html">Use</a></li>
 <li><a href="package-tree.html">Tree</a></li>
 <li><a href="../../../../deprecated-list.html">Deprecated</a></li>
 <li><a href="../../../../index-all.html">Index</a></li>
@@ -44,12 +44,12 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/powernukkit/tests/api/MockPlayer.html" title="annotation in org.powernukkit.tests.api"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/powernukkit/tests/api/ReflectionUtil.html" title="class in org.powernukkit.tests.api"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/powernukkit/tests/api/ItemEnchantment.html" title="annotation in org.powernukkit.tests.api"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../org/powernukkit/tests/api/MockEntity.html" title="annotation in org.powernukkit.tests.api"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
-<li><a href="../../../../index.html?org/powernukkit/tests/api/MockServer.html" target="_top">Frames</a></li>
-<li><a href="MockServer.html" target="_top">No&nbsp;Frames</a></li>
+<li><a href="../../../../index.html?org/powernukkit/tests/api/ItemStack.html" target="_top">Frames</a></li>
+<li><a href="ItemStack.html" target="_top">No&nbsp;Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_top">
 <li><a href="../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
@@ -86,7 +86,7 @@
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">org.powernukkit.tests.api</div>
-<h2 title="Annotation Type MockServer" class="title">Annotation Type MockServer</h2>
+<h2 title="Annotation Type ItemStack" class="title">Annotation Type ItemStack</h2>
 </div>
 <div class="contentContainer">
 <div class="description">
@@ -94,12 +94,9 @@
 <li class="blockList">
 <hr>
 <br>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true" title="class or interface in java.lang.annotation">@Target</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>=<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#TYPE" title="class or interface in java.lang.annotation">TYPE</a>)
- <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true" title="class or interface in java.lang.annotation">@Retention</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>=<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/RetentionPolicy.html?is-external=true#RUNTIME" title="class or interface in java.lang.annotation">RUNTIME</a>)
- <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Documented.html?is-external=true" title="class or interface in java.lang.annotation">@Documented</a>
- @API(status=EXPERIMENTAL,
+<pre>@API(status=EXPERIMENTAL,
      since="0.1.0")
-public @interface <span class="memberNameLabel">MockServer</span></pre>
+public @interface <span class="memberNameLabel">ItemStack</span></pre>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
 <dd>joserobjr</dd>
@@ -123,36 +120,40 @@ public @interface <span class="memberNameLabel">MockServer</span></pre>
 <th class="colLast" scope="col">Optional Element and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/MockServer.html#callsRealMethods--">callsRealMethods</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/ItemStack.html#amount--">amount</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/MockServer.html#createTempDir--">createTempDir</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/ItemStack.html#block--">block</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/MockServer.html#initPrivateFields--">initPrivateFields</a></span></code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/ItemStack.html#displayName--">displayName</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/powernukkit/tests/api/MockLevel.html" title="annotation in org.powernukkit.tests.api">MockLevel</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/MockServer.html#levels--">levels</a></span></code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../org/powernukkit/tests/api/ItemEnchantment.html" title="annotation in org.powernukkit.tests.api">ItemEnchantment</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/ItemStack.html#enchantments--">enchantments</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/MockServer.html#maxPlayers--">maxPlayers</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/ItemStack.html#item--">item</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/ItemStack.html#lore--">lore</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/ItemStack.html#meta--">meta</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/MockServer.html#name--">name</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/ItemStack.html#namedTags--">namedTags</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/powernukkit/tests/api/MockPlayer.html" title="annotation in org.powernukkit.tests.api">MockPlayer</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/MockServer.html#players--">players</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends cn.nukkit.plugin.Plugin&gt;[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/MockServer.html#plugins--">plugins</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/ItemStack.html#unbreakable--">unbreakable</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -169,51 +170,105 @@ public @interface <span class="memberNameLabel">MockServer</span></pre>
 <!--   -->
 </a>
 <h3>Element Detail</h3>
-<a name="name--">
+<a name="item--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>name</h4>
+<h4>item</h4>
 <pre>@API(status=EXPERIMENTAL,
      since="0.1.0")
-public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name</pre>
+public abstract&nbsp;int&nbsp;item</pre>
 <dl>
 <dt>Default:</dt>
-<dd>"TestServer"</dd>
+<dd>0</dd>
 </dl>
 </li>
 </ul>
 </li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="maxPlayers--">
+<li class="blockList"><a name="block--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>maxPlayers</h4>
+<h4>block</h4>
 <pre>@API(status=EXPERIMENTAL,
      since="0.1.0")
-public abstract&nbsp;int&nbsp;maxPlayers</pre>
+public abstract&nbsp;int&nbsp;block</pre>
 <dl>
 <dt>Default:</dt>
-<dd>20</dd>
+<dd>0</dd>
 </dl>
 </li>
 </ul>
 </li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="levels--">
+<li class="blockList"><a name="meta--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>levels</h4>
+<h4>meta</h4>
 <pre>@API(status=EXPERIMENTAL,
      since="0.1.0")
-public abstract&nbsp;<a href="../../../../org/powernukkit/tests/api/MockLevel.html" title="annotation in org.powernukkit.tests.api">MockLevel</a>[]&nbsp;levels</pre>
+public abstract&nbsp;int&nbsp;meta</pre>
+<dl>
+<dt>Default:</dt>
+<dd>0</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="amount--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>amount</h4>
+<pre>@API(status=EXPERIMENTAL,
+     since="0.1.0")
+public abstract&nbsp;int&nbsp;amount</pre>
+<dl>
+<dt>Default:</dt>
+<dd>1</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="displayName--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>displayName</h4>
+<pre>@API(status=EXPERIMENTAL,
+     since="0.1.0")
+public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;displayName</pre>
+<dl>
+<dt>Default:</dt>
+<dd>"~~~"</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="lore--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lore</h4>
+<pre>@API(status=EXPERIMENTAL,
+     since="0.1.0")
+public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;lore</pre>
 <dl>
 <dt>Default:</dt>
 <dd>{}</dd>
@@ -223,15 +278,33 @@ public abstract&nbsp;<a href="../../../../org/powernukkit/tests/api/MockLevel.ht
 </li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="players--">
+<li class="blockList"><a name="unbreakable--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>players</h4>
+<h4>unbreakable</h4>
 <pre>@API(status=EXPERIMENTAL,
      since="0.1.0")
-public abstract&nbsp;<a href="../../../../org/powernukkit/tests/api/MockPlayer.html" title="annotation in org.powernukkit.tests.api">MockPlayer</a>[]&nbsp;players</pre>
+public abstract&nbsp;boolean&nbsp;unbreakable</pre>
+<dl>
+<dt>Default:</dt>
+<dd>false</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="enchantments--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>enchantments</h4>
+<pre>@API(status=EXPERIMENTAL,
+     since="0.1.0")
+public abstract&nbsp;<a href="../../../../org/powernukkit/tests/api/ItemEnchantment.html" title="annotation in org.powernukkit.tests.api">ItemEnchantment</a>[]&nbsp;enchantments</pre>
 <dl>
 <dt>Default:</dt>
 <dd>{}</dd>
@@ -241,72 +314,18 @@ public abstract&nbsp;<a href="../../../../org/powernukkit/tests/api/MockPlayer.h
 </li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="plugins--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>plugins</h4>
-<pre>@API(status=EXPERIMENTAL,
-     since="0.1.0")
-public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends cn.nukkit.plugin.Plugin&gt;[]&nbsp;plugins</pre>
-<dl>
-<dt>Default:</dt>
-<dd>{}</dd>
-</dl>
-</li>
-</ul>
-</li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="initPrivateFields--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>initPrivateFields</h4>
-<pre>@API(status=EXPERIMENTAL,
-     since="0.1.0")
-public abstract&nbsp;boolean&nbsp;initPrivateFields</pre>
-<dl>
-<dt>Default:</dt>
-<dd>true</dd>
-</dl>
-</li>
-</ul>
-</li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="callsRealMethods--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>callsRealMethods</h4>
-<pre>@API(status=EXPERIMENTAL,
-     since="0.1.0")
-public abstract&nbsp;boolean&nbsp;callsRealMethods</pre>
-<dl>
-<dt>Default:</dt>
-<dd>true</dd>
-</dl>
-</li>
-</ul>
-</li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="createTempDir--">
+<li class="blockList"><a name="namedTags--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>createTempDir</h4>
+<h4>namedTags</h4>
 <pre>@API(status=EXPERIMENTAL,
      since="0.1.0")
-public abstract&nbsp;boolean&nbsp;createTempDir</pre>
+public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;namedTags</pre>
 <dl>
 <dt>Default:</dt>
-<dd>true</dd>
+<dd>""</dd>
 </dl>
 </li>
 </ul>
@@ -329,7 +348,7 @@ public abstract&nbsp;boolean&nbsp;createTempDir</pre>
 <li><a href="../../../../overview-summary.html">Overview</a></li>
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
-<li><a href="class-use/MockServer.html">Use</a></li>
+<li><a href="class-use/ItemStack.html">Use</a></li>
 <li><a href="package-tree.html">Tree</a></li>
 <li><a href="../../../../deprecated-list.html">Deprecated</a></li>
 <li><a href="../../../../index-all.html">Index</a></li>
@@ -338,12 +357,12 @@ public abstract&nbsp;boolean&nbsp;createTempDir</pre>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/powernukkit/tests/api/MockPlayer.html" title="annotation in org.powernukkit.tests.api"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/powernukkit/tests/api/ReflectionUtil.html" title="class in org.powernukkit.tests.api"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/powernukkit/tests/api/ItemEnchantment.html" title="annotation in org.powernukkit.tests.api"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../org/powernukkit/tests/api/MockEntity.html" title="annotation in org.powernukkit.tests.api"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
-<li><a href="../../../../index.html?org/powernukkit/tests/api/MockServer.html" target="_top">Frames</a></li>
-<li><a href="MockServer.html" target="_top">No&nbsp;Frames</a></li>
+<li><a href="../../../../index.html?org/powernukkit/tests/api/ItemStack.html" target="_top">Frames</a></li>
+<li><a href="ItemStack.html" target="_top">No&nbsp;Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_bottom">
 <li><a href="../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
