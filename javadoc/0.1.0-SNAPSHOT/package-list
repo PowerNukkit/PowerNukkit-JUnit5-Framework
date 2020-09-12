@@ -1,2 +1,4 @@
+org.powernukkit.tests.api
+org.powernukkit.tests.exception
 org.powernukkit.tests.junit.jupiter
 org.powernukkit.tests.mocks
