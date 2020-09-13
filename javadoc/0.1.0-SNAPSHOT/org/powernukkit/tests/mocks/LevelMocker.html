@@ -5,7 +5,7 @@
 <!-- Global site tag (gtag.js) - Google Analytics --> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172727144-3"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "UA-172727144-3"); </script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>LevelMocker (PowerNukkit JUnit 5 Testing Framework 0.1.0-SNAPSHOT API)</title>
-<meta name="date" content="2020-09-12">
+<meta name="date" content="2020-09-13">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
 </head>
@@ -19,7 +19,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10};
+var methods = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -51,7 +51,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../org/powernukkit/tests/mocks/EntityMocker.html" title="class in org.powernukkit.tests.mocks"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/powernukkit/tests/mocks/Mocker.html" title="interface in org.powernukkit.tests.mocks"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/powernukkit/tests/mocks/Mocker.html" title="class in org.powernukkit.tests.mocks"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/powernukkit/tests/mocks/LevelMocker.html" target="_top">Frames</a></li>
@@ -101,24 +101,24 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../org/powernukkit/tests/mocks/Mocker.html" title="class in org.powernukkit.tests.mocks">org.powernukkit.tests.mocks.Mocker</a>&lt;cn.nukkit.level.Level&gt;</li>
+<li>
+<ul class="inheritance">
 <li>org.powernukkit.tests.mocks.LevelMocker</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../org/powernukkit/tests/mocks/Mocker.html" title="interface in org.powernukkit.tests.mocks">Mocker</a>&lt;cn.nukkit.level.Level&gt;</dd>
-</dl>
 <hr>
 <br>
 <pre>@API(status=EXPERIMENTAL,
      since="0.1.0")
 public class <span class="typeNameLabel">LevelMocker</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="../../../../org/powernukkit/tests/mocks/Mocker.html" title="interface in org.powernukkit.tests.mocks">Mocker</a>&lt;cn.nukkit.level.Level&gt;</pre>
+extends <a href="../../../../org/powernukkit/tests/mocks/Mocker.html" title="class in org.powernukkit.tests.mocks">Mocker</a>&lt;cn.nukkit.level.Level&gt;</pre>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
 <dd>joserobjr</dd>
@@ -146,6 +146,13 @@ implements <a href="../../../../org/powernukkit/tests/mocks/Mocker.html" title="
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/mocks/LevelMocker.html#LevelMocker-org.powernukkit.tests.api.MockLevel-">LevelMocker</a></span>(<a href="../../../../org/powernukkit/tests/api/MockLevel.html" title="annotation in org.powernukkit.tests.api">MockLevel</a>&nbsp;config)</code>&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/mocks/LevelMocker.html#LevelMocker-org.powernukkit.tests.api.MockLevel-java.lang.String-">LevelMocker</a></span>(<a href="../../../../org/powernukkit/tests/api/MockLevel.html" title="annotation in org.powernukkit.tests.api">MockLevel</a>&nbsp;config,
+           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelName)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/mocks/LevelMocker.html#LevelMocker-java.lang.String-">LevelMocker</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelName)</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -165,7 +172,22 @@ implements <a href="../../../../org/powernukkit/tests/mocks/Mocker.html" title="
 <td class="colFirst"><code>cn.nukkit.level.Level</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/mocks/LevelMocker.html#create--">create</a></span>()</code>&nbsp;</td>
 </tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>cn.nukkit.level.Level</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/mocks/LevelMocker.html#getLevel--">getLevel</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/mocks/LevelMocker.html#getLevelName--">getLevelName</a></span>()</code>&nbsp;</td>
+</tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.org.powernukkit.tests.mocks.Mocker">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.powernukkit.tests.mocks.<a href="../../../../org/powernukkit/tests/mocks/Mocker.html" title="class in org.powernukkit.tests.mocks">Mocker</a></h3>
+<code><a href="../../../../org/powernukkit/tests/mocks/Mocker.html#createAndSet-java.lang.Object-java.lang.reflect.Field-">createAndSet</a>, <a href="../../../../org/powernukkit/tests/mocks/Mocker.html#getInstance--">getInstance</a>, <a href="../../../../org/powernukkit/tests/mocks/Mocker.html#getInstanceField--">getInstanceField</a>, <a href="../../../../org/powernukkit/tests/mocks/Mocker.html#recreate--">recreate</a>, <a href="../../../../org/powernukkit/tests/mocks/Mocker.html#setInstance-java.lang.Object-">setInstance</a>, <a href="../../../../org/powernukkit/tests/mocks/Mocker.html#setInstanceField-java.lang.reflect.Field-">setInstanceField</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -199,12 +221,35 @@ implements <a href="../../../../org/powernukkit/tests/mocks/Mocker.html" title="
 <a name="LevelMocker-org.powernukkit.tests.api.MockLevel-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>LevelMocker</h4>
 <pre>@API(status=EXPERIMENTAL,
      since="0.1.0")
 public&nbsp;LevelMocker(<a href="../../../../org/powernukkit/tests/api/MockLevel.html" title="annotation in org.powernukkit.tests.api">MockLevel</a>&nbsp;config)</pre>
+</li>
+</ul>
+<a name="LevelMocker-org.powernukkit.tests.api.MockLevel-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LevelMocker</h4>
+<pre>@API(status=EXPERIMENTAL,
+     since="0.1.0")
+public&nbsp;LevelMocker(<a href="../../../../org/powernukkit/tests/api/MockLevel.html" title="annotation in org.powernukkit.tests.api">MockLevel</a>&nbsp;config,
+                                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelName)</pre>
+</li>
+</ul>
+<a name="LevelMocker-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>LevelMocker</h4>
+<pre>@API(status=EXPERIMENTAL,
+     since="0.1.0")
+public&nbsp;LevelMocker(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelName)</pre>
 </li>
 </ul>
 </li>
@@ -218,14 +263,36 @@ public&nbsp;LevelMocker(<a href="../../../../org/powernukkit/tests/api/MockLevel
 <a name="create--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>create</h4>
 <pre>public&nbsp;cn.nukkit.level.Level&nbsp;create()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../org/powernukkit/tests/mocks/Mocker.html#create--">create</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/powernukkit/tests/mocks/Mocker.html" title="interface in org.powernukkit.tests.mocks">Mocker</a>&lt;cn.nukkit.level.Level&gt;</code></dd>
+<dd><code><a href="../../../../org/powernukkit/tests/mocks/Mocker.html#create--">create</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/powernukkit/tests/mocks/Mocker.html" title="class in org.powernukkit.tests.mocks">Mocker</a>&lt;cn.nukkit.level.Level&gt;</code></dd>
 </dl>
+</li>
+</ul>
+<a name="getLevelName--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLevelName</h4>
+<pre>@API(status=EXPERIMENTAL,
+     since="0.1.0")
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getLevelName()</pre>
+</li>
+</ul>
+<a name="getLevel--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getLevel</h4>
+<pre>@API(status=EXPERIMENTAL,
+     since="0.1.0")
+public&nbsp;cn.nukkit.level.Level&nbsp;getLevel()</pre>
 </li>
 </ul>
 </li>
@@ -257,7 +324,7 @@ public&nbsp;LevelMocker(<a href="../../../../org/powernukkit/tests/api/MockLevel
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../org/powernukkit/tests/mocks/EntityMocker.html" title="class in org.powernukkit.tests.mocks"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/powernukkit/tests/mocks/Mocker.html" title="interface in org.powernukkit.tests.mocks"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/powernukkit/tests/mocks/Mocker.html" title="class in org.powernukkit.tests.mocks"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/powernukkit/tests/mocks/LevelMocker.html" target="_top">Frames</a></li>

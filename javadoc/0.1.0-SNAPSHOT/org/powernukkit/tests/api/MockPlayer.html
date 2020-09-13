@@ -5,7 +5,7 @@
 <!-- Global site tag (gtag.js) - Google Analytics --> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172727144-3"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "UA-172727144-3"); </script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>MockPlayer (PowerNukkit JUnit 5 Testing Framework 0.1.0-SNAPSHOT API)</title>
-<meta name="date" content="2020-09-12">
+<meta name="date" content="2020-09-13">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
 </head>
@@ -127,6 +127,14 @@ public @interface <span class="memberNameLabel">MockPlayer</span></pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/MockPlayer.html#clientId--">clientId</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/MockPlayer.html#clientIp--">clientIp</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/MockPlayer.html#clientPort--">clientPort</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>long[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/MockPlayer.html#clientUUID--">clientUUID</a></span></code>&nbsp;</td>
 </tr>
@@ -171,10 +179,6 @@ public @interface <span class="memberNameLabel">MockPlayer</span></pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/MockPlayer.html#position--">position</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/MockPlayer.html#protocol--">protocol</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/powernukkit/tests/api/MockPlayer.html#yaw--">yaw</a></span></code>&nbsp;</td>
 </tr>
@@ -229,24 +233,6 @@ public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lan
 </li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="protocol--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>protocol</h4>
-<pre>@API(status=EXPERIMENTAL,
-     since="0.1.0")
-public abstract&nbsp;int&nbsp;protocol</pre>
-<dl>
-<dt>Default:</dt>
-<dd>0</dd>
-</dl>
-</li>
-</ul>
-</li>
-</ul>
-<ul class="blockList">
 <li class="blockList"><a name="clientId--">
 <!--   -->
 </a>
@@ -259,6 +245,42 @@ public abstract&nbsp;long&nbsp;clientId</pre>
 <dl>
 <dt>Default:</dt>
 <dd>0L</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="clientIp--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clientIp</h4>
+<pre>@API(status=EXPERIMENTAL,
+     since="0.1.0")
+public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;clientIp</pre>
+<dl>
+<dt>Default:</dt>
+<dd>""</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="clientPort--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clientPort</h4>
+<pre>@API(status=EXPERIMENTAL,
+     since="0.1.0")
+public abstract&nbsp;int&nbsp;clientPort</pre>
+<dl>
+<dt>Default:</dt>
+<dd>0</dd>
 </dl>
 </li>
 </ul>
