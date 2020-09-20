@@ -5,7 +5,7 @@
 <!-- Global site tag (gtag.js) - Google Analytics --> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172727144-3"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "UA-172727144-3"); </script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>PowerNukkitExtension (PowerNukkit JUnit 5 Testing Framework 0.1.0-SNAPSHOT API)</title>
-<meta name="date" content="2020-09-13">
+<meta name="date" content="2020-09-20">
 <link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../../../script.js"></script>
 </head>
@@ -19,7 +19,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -115,7 +115,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd>org.junit.jupiter.api.extension.AfterAllCallback, org.junit.jupiter.api.extension.AfterEachCallback, org.junit.jupiter.api.extension.BeforeEachCallback, org.junit.jupiter.api.extension.Extension, org.junit.jupiter.api.extension.ParameterResolver, org.junit.jupiter.api.extension.TestInstancePostProcessor</dd>
+<dd>org.junit.jupiter.api.extension.AfterAllCallback, org.junit.jupiter.api.extension.AfterEachCallback, org.junit.jupiter.api.extension.BeforeAllCallback, org.junit.jupiter.api.extension.BeforeEachCallback, org.junit.jupiter.api.extension.Extension, org.junit.jupiter.api.extension.ParameterResolver, org.junit.jupiter.api.extension.TestInstancePostProcessor</dd>
 </dl>
 <hr>
 <br>
@@ -127,7 +127,7 @@ var activeTableTab = "activeTableTab";
             <a href="../../../../../org/powernukkit/tests/api/MockServer.html#createTempDir--">createTempDir</a>=false)
 public class <span class="typeNameLabel">PowerNukkitExtension</span>
 extends org.mockito.junit.jupiter.MockitoExtension
-implements org.junit.jupiter.api.extension.TestInstancePostProcessor, org.junit.jupiter.api.extension.AfterAllCallback</pre>
+implements org.junit.jupiter.api.extension.TestInstancePostProcessor, org.junit.jupiter.api.extension.BeforeAllCallback, org.junit.jupiter.api.extension.AfterAllCallback</pre>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
 <dd>joserobjr</dd>
@@ -176,6 +176,10 @@ implements org.junit.jupiter.api.extension.TestInstancePostProcessor, org.junit.
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/powernukkit/tests/junit/jupiter/PowerNukkitExtension.html#afterEach-org.junit.jupiter.api.extension.ExtensionContext-">afterEach</a></span>(org.junit.jupiter.api.extension.ExtensionContext&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/powernukkit/tests/junit/jupiter/PowerNukkitExtension.html#beforeAll-org.junit.jupiter.api.extension.ExtensionContext-">beforeAll</a></span>(org.junit.jupiter.api.extension.ExtensionContext&nbsp;context)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/powernukkit/tests/junit/jupiter/PowerNukkitExtension.html#postProcessTestInstance-java.lang.Object-org.junit.jupiter.api.extension.ExtensionContext-">postProcessTestInstance</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;testInstance,
                        org.junit.jupiter.api.extension.ExtensionContext&nbsp;context)</code>&nbsp;</td>
@@ -226,6 +230,22 @@ implements org.junit.jupiter.api.extension.TestInstancePostProcessor, org.junit.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="beforeAll-org.junit.jupiter.api.extension.ExtensionContext-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>beforeAll</h4>
+<pre>public&nbsp;void&nbsp;beforeAll(org.junit.jupiter.api.extension.ExtensionContext&nbsp;context)
+               throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>beforeAll</code>&nbsp;in interface&nbsp;<code>org.junit.jupiter.api.extension.BeforeAllCallback</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="postProcessTestInstance-java.lang.Object-org.junit.jupiter.api.extension.ExtensionContext-">
 <!--   -->
 </a>
@@ -234,12 +254,12 @@ implements org.junit.jupiter.api.extension.TestInstancePostProcessor, org.junit.
 <h4>postProcessTestInstance</h4>
 <pre>public&nbsp;void&nbsp;postProcessTestInstance(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;testInstance,
                                     org.junit.jupiter.api.extension.ExtensionContext&nbsp;context)
-                             throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ReflectiveOperationException.html?is-external=true" title="class or interface in java.lang">ReflectiveOperationException</a></pre>
+                             throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>postProcessTestInstance</code>&nbsp;in interface&nbsp;<code>org.junit.jupiter.api.extension.TestInstancePostProcessor</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ReflectiveOperationException.html?is-external=true" title="class or interface in java.lang">ReflectiveOperationException</a></code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd>
 </dl>
 </li>
 </ul>
